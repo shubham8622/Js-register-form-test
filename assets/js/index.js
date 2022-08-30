@@ -56,7 +56,7 @@ function validationFun(event){
             }else if((fieldValue) && (fieldName == "firstName" || fieldName == "lastName")){
                 error[fieldName] = {
                     state:fieldValue.length < 3? true:false,
-                    message:fieldValue.length < 3? "Minimum 3 char" :""
+                    message:fieldValue.length < 3? "At least 3 characters" :""
                 }
             }else if((fieldValue) && (fieldName == "email")){
                 let isValid = /^([\w.+]{0,})([^\W])(@)([\w]{2,20})(\.[\w]{2,4})+$/.test(fieldValue);
